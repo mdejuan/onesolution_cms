@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mdejuan/mdejuan.github.io
   branch: master
-  site_domain: sharp-turing-e401ce.netlify.app
+  site_domain: sharp-turing-e401ce.netlify.com
 
 media_folder: "images/uploads"
 
