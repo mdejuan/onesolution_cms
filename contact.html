@@ -112,7 +112,7 @@
                                 <a href="#" class="off-canvas-close"><i class="fal fa-times"></i></a>
                               
                                 <div class="widget contact-widget">
-                                    <h4 class="widget-title">Contact Us</h4>
+                                    <h4 class="widget-title" id="title1"></h4>
                                     <ul>
                                         <li>
                                             <i class="far fa-map-marker-alt"></i>
@@ -337,6 +337,7 @@ North King Street, Smithfield, Dublin 7
             $.getJSON("json/contact.json", function(json) {
                 // here and only here you can access the results of your AJAX call.
                 console.log(JSON.stringify(json.title));
+                $("#title1").append(json.title);
             });
 function isEmail(email) {
 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
