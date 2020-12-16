@@ -17,4 +17,4 @@ collections:
         name: "contact"
         file: "/json/contact.json"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title2, name: title2, widget: string}
