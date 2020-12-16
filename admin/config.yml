@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mdejuan.github.io/onesolution_cms
   branch: master
-  site_domain: sharp-turing-e401ce.netlify.com
+  site_domain: sharp-turing-e401ce.netlify.app
 
 media_folder: "images/uploads"
 
