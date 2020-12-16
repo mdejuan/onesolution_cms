@@ -7,14 +7,17 @@ backend:
 media_folder: "/assets/img/uploads"
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Pages"
     extension: "json"
     editor:
       preview: false
+    delete: false
+    preview_path: 'page'
     files:
       - label: "Contact"
         name: "contact"
         file: "/json/contact.json"
+        allow_add: true
         fields:
-          - {label: Title2, name: title2, widget: string}
+          - { label: Title, name: title, widget: string}
