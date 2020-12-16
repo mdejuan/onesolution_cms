@@ -336,7 +336,7 @@ North King Street, Smithfield, Dublin 7
         $(document).ready(function () {
             $.getJSON("json/contact.json", function(json) {
                 // here and only here you can access the results of your AJAX call.
-                $('#console').append(JSON.stringify(json));
+                console.log(JSON.stringify(json));
             });
 function isEmail(email) {
 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
