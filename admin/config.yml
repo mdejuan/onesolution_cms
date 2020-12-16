@@ -4,16 +4,17 @@ backend:
   branch: master
   site_domain: sharp-turing-e401ce.netlify.app
 
-media_folder: "assets/img/uploads"
+media_folder: "/assets/img/uploads"
 
-- name: "settings"
-  label: "Settings"
-  extension: "json"
-  editor:
-    preview: false
-  files:
-    - label: "Contact"
-      name: "contact"
-      file: "/json/contact.json"
-      fields:
-        - {label: Title, name: title, widget: string}
+collections:
+  - label: "Pages"
+    name: "pages"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - label: "Contact"
+        name: "contact"
+        file: "/json/contact.json"
+        fields:
+          - {label: Title, name: title, widget: string}
