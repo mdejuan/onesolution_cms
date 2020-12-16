@@ -2,18 +2,17 @@ backend:
   name: github
   repo: mdejuan/mdejuan.github.io
   branch: master
-  site_domain: sharp-turing-e401ce.netlify.com
+  site_domain: sharp-turing-e401ce.netlify.app
 
-media_folder: "images/uploads"
+media_folder: "assets/img/uploads"
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    delete: false
+    files:
+      - label: "Contact"
+        name: "contact"
+        file: "json/contact.json"
+        fields:
+          - {label: Title, name: title, widget: string}
