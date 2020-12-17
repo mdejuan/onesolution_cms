@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mdejuan/mdejuan.github.io/onesolution_cms
+  repo: mdejuan.github.io/onesolution_cms
   branch: master
   site_domain: sharp-turing-e401ce.netlify.app
 
