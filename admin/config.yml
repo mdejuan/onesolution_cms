@@ -22,22 +22,15 @@ collections:
         fields:
           - { label: Title, name: title, widget: string}
 
-  - name: "blog"
-    label: "Blog Entries"
+  - label: "Blog"
+    name: "blog"
     extension: "json"
-    editor:
-      preview: true
-    delete: false
-    preview_path: 'blog'
-    files:
-      - label: "Blog"
-        name: "blog"
-        file: "/json/blog.json"
-        allow_add: true
-        fields:
-          - { name: path, label: Path }
-          - { name: date, label: Date, widget: date }
-          - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: image, label: Image, widget: image }
-          - { name: body, label: Body, widget: markdown }
+    file: "/json/blog.json"
+    allow_add: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Body, widget: markdown }
