@@ -22,8 +22,8 @@ collections:
         fields:
           - { label: Title, name: title, widget: string}
 
-  - label: "Blog"
-    name: "blog"
+  - name: "blog"
+    label: "Blog"
     extension: "json"
     create: true
     folder: posts
