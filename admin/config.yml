@@ -28,7 +28,7 @@ collections:
     create: true
     folder: posts
     file: "/json/blog.json"
-    fields:d
+    fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: image, label: Image, widget: image }
