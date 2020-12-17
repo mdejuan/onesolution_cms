@@ -25,12 +25,11 @@ collections:
   - label: "Blog"
     name: "blog"
     extension: "json"
+    create: true
+    folder: posts
     file: "/json/blog.json"
-    allow_add: true
-    fields:
-      - { name: path, label: Path }
+    fields:d
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: description, label: Description }
       - { name: image, label: Image, widget: image }
       - { name: body, label: Body, widget: markdown }
