@@ -11,7 +11,7 @@ collections:
     label: "Pages"
     extension: "json"
     editor:
-      preview: false
+      preview: true
     delete: false
     preview_path: 'page'
     files:
@@ -21,3 +21,23 @@ collections:
         allow_add: true
         fields:
           - { label: Title, name: title, widget: string}
+
+  - name: "blog"
+    label: "Blog Entries"
+    extension: "json"
+    editor:
+      preview: true
+    delete: false
+    preview_path: 'blog'
+    files:
+      - label: "Blog"
+        name: "blog"
+        file: "/json/contact.json"
+        allow_add: true
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: image, label: Image, widget: image }
+          - { name: body, label: Body, widget: markdown }
