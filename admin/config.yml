@@ -3,6 +3,7 @@ backend:
   repo: mdejuan/mdejuan.github.io
   branch: master
   site_domain: sharp-turing-e401ce.netlify.app
+  display_url: https://onesolution.ie
 
 media_folder: "/assets/img/uploads"
 
